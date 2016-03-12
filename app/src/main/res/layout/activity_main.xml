@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jorgeandres.ejercicio4.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Formulario "
+        android:layout_gravity="center">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="12dp"
+        android:hint="Loggin"
+        android:id="@+id/rloggin"
+        android:layout_weight="0.07" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="12dp"
+        android:hint="Password"
+        android:id="@+id/rPassword"
+        android:layout_weight="0.07"
+        android:password="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="12dp"
+        android:hint="Repetir Password"
+        android:id="@+id/rrPassword"
+        android:layout_weight="0.07"
+        android:password="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="12dp"
+        android:hint="Correo"
+        android:id="@+id/rcorreo"
+        android:layout_weight="0.07" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sexo"
+        android:orientation="horizontal">
+
+      <RadioButton
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rmen"
+        android:text="masculino" />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rwomen"
+            android:text="fememino"/>
+
+    </RadioGroup>
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="fecha"
+       android:id="@+id/rfecha"
+       android:onClick="showDatePickerDialog"/>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:text="Ciudad"
+       android:id="@+id/ciudad"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/rspin">
+    </Spinner>
+    <LinearLayout
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+    <CheckBox
+        android:id="@+id/rho1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="futbol"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/rho2"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:text="Comer"
+        android:onClick="onCheckboxClicked"
+        android:layout_weight="0.64" />
+
+        <CheckBox
+        android:id="@+id/rho3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Cine"
+        android:onClick="onCheckboxClicked"
+        android:layout_weight="0.4" />
+
+        <CheckBox
+            android:id="@+id/rho4"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Leer"
+            android:onClick="onCheckboxClicked"
+            android:layout_weight="0.4" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Aceptar"
+        android:id="@+id/rbu"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text=""
+        android:layout_gravity="center"
+        android:id="@+id/resul"/>
+
+
+</LinearLayout>
